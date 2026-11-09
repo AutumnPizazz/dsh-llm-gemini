@@ -1,0 +1,3 @@
+# Runtime is selected through the profile-local @deepseek-ai/dsh-llm-pi-ai alias.
+# Keeping the existing entry preserves its ID, provider config, and settings namespace.
+[]

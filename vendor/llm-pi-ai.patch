@@ -1,0 +1,22 @@
+--- a/lib/index.js
++++ b/src/adapter.mjs
+@@ -12,0 +13,2 @@
++import { googleGenerativeAIApi } from "@earendil-works/pi-ai/api/google-generative-ai.lazy";
++import { discoverGoogleModels } from "./google-discovery.mjs";
+@@ -838 +840,2 @@
+-	"anthropic-messages": anthropicMessagesApi
++	"anthropic-messages": anthropicMessagesApi,
++	"google-generative-ai": googleGenerativeAIApi
+@@ -2264 +2267 @@
+-* OpenAI-compatible and Anthropic Messages protocols are interrogated through
++* Gemini, OpenAI-compatible and Anthropic Messages protocols are interrogated through
+@@ -2279 +2282,2 @@
+-* with no models. pi-ai's remaining protocols are absent for the same reason.
++* with no models. Gemini uses its native listing and x-goog-api-key instead.
++* pi-ai's remaining protocols are absent for the same reason.
+@@ -2284 +2288,2 @@
+-	"openai-responses"
++	"openai-responses",
++	"google-generative-ai"
+@@ -2444,0 +2450 @@
++	if (api === "google-generative-ai") return discoverGoogleModels(request, stored?.headers, apiKey, readBounded);

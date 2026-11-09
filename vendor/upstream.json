@@ -1,0 +1,13 @@
+{
+  "version": "0.2.2-rc.1",
+  "repository": "https://github.com/deepseek-ai/deepseek-harness",
+  "files": [
+    {
+      "package": "@deepseek-ai/dsh-llm-pi-ai",
+      "source": "lib/index.js",
+      "fork": "src/adapter.mjs",
+      "sha256": "1a3ae58f9b4493e15459cc5000ec80f21b5d3f4a9dea6ffb6bc28e5b8817ae8a"
+    }
+  ],
+  "piAiVersion": "1.5.0"
+}

@@ -1,0 +1,12 @@
+dsh-llm-gemini is an independent, unofficial DeepSeek Harness extension.
+
+src/adapter.mjs and locale/ are derived from @deepseek-ai/dsh-llm-pi-ai
+Upstream version: 0.2.2-rc.1
+Repository: https://github.com/deepseek-ai/deepseek-harness
+Copyright (c) 2026 DeepSeek
+License: MIT (preserved in LICENSE)
+
+Modifications: expose the google-generative-ai factory for custom providers
+and add native Gemini model discovery. The official Models UI reads the
+extended schema without a frontend fork. See vendor/upstream.json and
+vendor/llm-pi-ai.patch for provenance and the adapter delta.
